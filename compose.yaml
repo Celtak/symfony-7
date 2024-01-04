@@ -6,13 +6,13 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./public:/code
+      - ./:/code
       - ./nginx.conf:/etc/nginx/nginx.conf
   php:
     # L'image est construite grâce au Dockerfile
     build: .
     volumes:
-      - ./public:/code
+      - ./:/code
   mysql:
     image: mysql:8.2
     environment:
