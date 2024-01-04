@@ -46,7 +46,7 @@ DATABASE_URL=mysql://user:password@mysql:3306/appdb
 ## 6. Lancer les conteneurs grâce au Docker Compose
 
 ```bash
-docker-compose up -d
+docker-compose up
 ```
 
 ## 7. Accéder au site
