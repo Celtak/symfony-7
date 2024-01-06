@@ -52,3 +52,35 @@ docker-compose up
 ## 7. Accéder au site
 
 Tapez `http://localhost:8080` dans votre navigateur.
+
+## Autres commandes utiles
+
+### Créer un controleur
+
+```bash
+symfony console make:controller [NomDuControleur] 
+```
+
+### Gestion de la base de données
+
+### Créer une entité
+
+```bash
+symfony console make:entity [NomDeLEntité]
+```
+
+#### Créer une migration
+
+Crée une nouvelle migration basée sur les modifications de la base de données.
+
+```bash
+symfony console make:migration
+```
+
+#### Exécuter les migrations
+
+Exécute les migrations pour mettre à jour la base de données.
+
+```bash
+symfony console doctrine:migrations:migrate
+```
